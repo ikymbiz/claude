@@ -181,7 +181,7 @@ def main():
     if api_key:
         client = init_anthropic_client(api_key)
     else:
-        st.warning("APIキーを入力してください")
+        st.warning("input your name")
         st.stop()
 
     # チャット履歴の表示
