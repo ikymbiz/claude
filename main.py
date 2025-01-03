@@ -166,7 +166,7 @@ def main():
         st.divider()
 
         uploaded_file = st.file_uploader(
-            "upload image or Excel file",
+            "file uploader",
             type=VALID_FILE_TYPES,
             help="画像(.png, .jpg, .jpeg, .webp)またはExcel(.xlsx)ファイルをアップロード"
         )
