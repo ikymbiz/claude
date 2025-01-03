@@ -161,21 +161,19 @@ def main():
 
     # サイドバーのコンポーネント
     with st.sidebar:
-        st.subheader("API Key")
-        api_key = st.text_input("API Keyを入力", type="password")
+        api_key = st.text_input("input your name", type="password")
 
         st.divider()
 
-        st.subheader("ファイルアップロード")
         uploaded_file = st.file_uploader(
-            "ファイルを選択",
+            "upload image or Excel file",
             type=VALID_FILE_TYPES,
             help="画像(.png, .jpg, .jpeg, .webp)またはExcel(.xlsx)ファイルをアップロード"
         )
 
         st.divider()
 
-        if st.button("会話をクリア"):
+        if st.button("Clear"):
             st.session_state.messages = []
             st.rerun()
 
