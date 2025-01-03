@@ -161,8 +161,8 @@ def main():
 
     # サイドバーのコンポーネント
     with st.sidebar:
-        st.subheader("Anthropic API Key")
-        api_key = st.text_input("Anthropic API Keyを入力", type="password")
+        st.subheader("API Key")
+        api_key = st.text_input("API Keyを入力", type="password")
 
         st.divider()
 
